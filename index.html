@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monthly Anniversary Love Letter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Intro Overlay -->
+    <div class="intro-overlay" id="introOverlay">
+      <div class="intro-content">
+        <div class="intro-heart">
+          <div class="intro-heart-shape"></div>
+        </div>
+        <h1 class="intro-title">Monthly Anniversary</h1>
+        <p class="intro-subtitle">A Special Love Letter</p>
+        <div class="intro-envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body"></div>
+          <div class="envelope-letter"></div>
+        </div>
+        <button class="open-letter-btn" id="openLetterBtn">
+          <span>Open My Heart</span>
+          <div class="btn-sparkle"></div>
+        </button>
+      </div>
+      <div class="intro-flowers">
+        <div class="intro-tulip intro-tulip-1"></div>
+        <div class="intro-tulip intro-tulip-2"></div>
+        <div class="intro-rose intro-rose-1"></div>
+        <div class="intro-rose intro-rose-2"></div>
+      </div>
+    </div>
+
+    <div class="container" id="mainContent">
+      <!-- Floating flowers background -->
+      <div class="floating-flowers">
+        <div class="tulip tulip-1"></div>
+        <div class="tulip tulip-2"></div>
+        <div class="tulip tulip-3"></div>
+        <div class="rose rose-1"></div>
+        <div class="rose rose-2"></div>
+        <div class="rose rose-3"></div>
+      </div>
+
+      <!-- Main love letter -->
+      <div class="love-letter">
+        <div class="letter-header">
+          <div class="heart-decoration">
+            <div class="heart"></div>
+          </div>
+          <h1 class="title">Monthly Anniversary</h1>
+          <div class="subtitle">A Love Letter for You</div>
+        </div>
+
+        <div class="letter-content">
+          <div class="date">
+            <span id="current-date"></span>
+          </div>
+
+          <div class="greeting">
+            <span class="highlight">My Dearest Love,</span>
+          </div>
+
+          <div class="message">
+            <p class="paragraph fade-in">
+              Another beautiful month has passed with you by my side, and my
+              heart overflows with gratitude for every moment we've shared
+              together.
+            </p>
+
+            <p class="paragraph fade-in">
+              Like the gentle tulips that bloom in spring, our love continues to
+              grow and flourish with each passing day. You bring color to my
+              world, just as these beautiful flowers bring life to a garden.
+            </p>
+
+            <p class="paragraph fade-in">
+              You are my rose among thorns, my comfort in chaos, and my joy in
+              every season. Your love is the mint-fresh breeze that soothes my
+              soul and the warmth that lights up my darkest days.
+            </p>
+
+            <p class="paragraph fade-in">
+              Thank you for being my partner, my best friend, and my greatest
+              love. Here's to another month of adventures, laughter, and endless
+              love.
+            </p>
+          </div>
+
+          <div class="signature fade-in">
+            <div class="love-text">With all my love,</div>
+            <div class="name">Your Forever Valentine ❤️</div>
+          </div>
+        </div>
+
+        <!-- Decorative flower borders -->
+        <div class="flower-border top-border">
+          <div class="border-flower tulip-border"></div>
+          <div class="border-flower rose-border"></div>
+          <div class="border-flower tulip-border"></div>
+        </div>
+
+        <div class="flower-border bottom-border">
+          <div class="border-flower rose-border"></div>
+          <div class="border-flower tulip-border"></div>
+          <div class="border-flower rose-border"></div>
+        </div>
+      </div>
+
+      <!-- Interactive elements -->
+      <div class="interactive-hearts">
+        <div class="interactive-heart" data-message="I love you!"></div>
+        <div class="interactive-heart" data-message="You're amazing!"></div>
+        <div class="interactive-heart" data-message="Forever yours!"></div>
+      </div>
+
+      <!-- Modern Music Player Section -->
+      <div class="music-player-modern" id="musicPlayer">
+        <div class="playlist-modern">
+          <div class="album-title">All These and More (2024)</div>
+          <div
+            class="song-item"
+            data-src="music/Be With You.mp3"
+            data-title="Be With You"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Be With You</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/KYGM.mp3"
+            data-title="KYGM"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">KYGM</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Strangest Love.mp3"
+            data-title="Strangest Love"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Strangest Love</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+
+          <div class="album-title">
+            Reflections on Moonlight & Poetry (2019)
+          </div>
+          <div
+            class="song-item"
+            data-src="music/The Ridleys - Aphrodite (Lyric Video).mp3"
+            data-title="Aphrodite"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Aphrodite</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Meaningful Silence.mp3"
+            data-title="Meaningful Silence"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Meaningful Silence</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Germany & Rome.mp3"
+            data-title="Germany & Rome"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Germany & Rome</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/DYWTBM.mp3"
+            data-title="DYWTBM"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">DYWTBM</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Maybe.mp3"
+            data-title="Maybe"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Maybe</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Starlit Ocean.mp3"
+            data-title="Starlit Ocean"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Starlit Ocean</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Stay.mp3"
+            data-title="Stay"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Stay</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Cold Feet.mp3"
+            data-title="Cold Feet"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Cold Feet</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Raconteur.mp3"
+            data-title="Raconteur"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Raconteur</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Rorschach Blots.mp3"
+            data-title="Rorschach Blots"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Rorschach Blots</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Take Our Time.mp3"
+            data-title="Take Our Time"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Take Our Time</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Troubadour.mp3"
+            data-title="Troubadour"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Troubadour</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/IntroOutro.mp3"
+            data-title="Intro/Outro"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Intro/Outro</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+
+          <div class="album-title">Aphrodite EP (2016)</div>
+          <div
+            class="song-item"
+            data-src="music/Yvaine.mp3"
+            data-title="Yvaine"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Yvaine</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+
+          <div class="album-title">Until I Reach the Sun, Vol. 1 (2022)</div>
+          <div
+            class="song-item"
+            data-src="music/The Ridleys - Summertown (Lyrics).mp3"
+            data-title="Summertown"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Summertown</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/It All Makes Sense (Official Audio).mp3"
+            data-title="It All Makes Sense"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">It All Makes Sense</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Prodigal's Anthem (Official Audio).mp3"
+            data-title="Prodigal's Anthem"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Prodigal's Anthem</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/When a Man Touches the Sun (Official Audio).mp3"
+            data-title="When a Man Touches the Sun"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">When a Man Touches the Sun</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Home.mp3"
+            data-title="Home"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Home</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Wonderland.mp3"
+            data-title="Wonderland"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Wonderland</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Return.mp3"
+            data-title="Return"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Return</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+
+          <div class="album-title">Until I Reach the Sun, Vol. 2 (2023)</div>
+          <div
+            class="song-item"
+            data-src="music/The Ridleys - Looking For (Official Audio).mp3"
+            data-title="Looking For"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Looking For</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Running to Vancouver (Official Audio).mp3"
+            data-title="Running to Vancouver"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Running to Vancouver</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Icarus.mp3"
+            data-title="Icarus"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Icarus</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Milkyway - The Ridleys (Official Lyric Video).mp3"
+            data-title="Milkyway"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Milkyway</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Constantly.mp3"
+            data-title="Constantly"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Constantly</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Lagoon.mp3"
+            data-title="Lagoon"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Lagoon</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+          <div
+            class="song-item"
+            data-src="music/Let Me Go, Loneliness.mp3"
+            data-title="Let Me Go, Loneliness"
+            data-artist="The Ridleys"
+          >
+            <div class="song-title">Let Me Go, Loneliness</div>
+            <div class="song-artist">The Ridleys</div>
+          </div>
+        </div>
+        <!-- Mini Player at bottom -->
+        <div class="mini-player" id="miniPlayer">
+          <div class="mini-info">
+            <span class="mini-title" id="miniTitle">Select a song</span>
+            <span class="mini-artist" id="miniArtist"></span>
+          </div>
+          <button class="mini-btn" id="miniPlayPause">
+            <span id="miniPlayPauseIcon">▶️</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Audio element for music playback -->
+      <audio id="musicAudio" preload="metadata">
+        <source src="" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Falling petals animation -->
+      <div class="petals-container">
+        <div class="petal petal-1"></div>
+        <div class="petal petal-2"></div>
+        <div class="petal petal-3"></div>
+        <div class="petal petal-4"></div>
+        <div class="petal petal-5"></div>
+        <div class="petal petal-6"></div>
+      </div>
+    </div>
+
+    <!-- Audio element for romantic background music -->
+    <audio id="background-music" loop>
+      <source
+        src="https://www.soundjay.com/misc/sounds/romantic-music.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+    <script>
+      // Prevent letter from auto-opening: show intro overlay until button is clicked
+      document.addEventListener("DOMContentLoaded", function () {
+        const introOverlay = document.getElementById("introOverlay");
+        const mainContent = document.getElementById("mainContent");
+        const openLetterBtn = document.getElementById("openLetterBtn");
+
+        // Hide main content initially, show overlay
+        mainContent.classList.remove("revealed");
+        introOverlay.classList.remove("hide");
+
+        openLetterBtn.addEventListener("click", function () {
+          introOverlay.classList.add("hide");
+          setTimeout(() => {
+            mainContent.classList.add("revealed");
+          }, 400);
+        });
+
+        // Modern music player logic
+        const playlist = Array.from(
+          document.querySelectorAll(".playlist-modern .song-item")
+        );
+        const audio = document.getElementById("musicAudio");
+        const miniPlayer = document.getElementById("miniPlayer");
+        const miniTitle = document.getElementById("miniTitle");
+        const miniArtist = document.getElementById("miniArtist");
+        const miniPlayPause = document.getElementById("miniPlayPause");
+        const miniPlayPauseIcon = document.getElementById("miniPlayPauseIcon");
+        let currentSongIndex = -1;
+        let isPlaying = false;
+
+        function updateMiniPlayer(index) {
+          if (index < 0 || index >= playlist.length) {
+            miniTitle.textContent = "Select a song";
+            miniArtist.textContent = "";
+            miniPlayer.classList.remove("active");
+            return;
+          }
+          const item = playlist[index];
+          miniTitle.textContent = item.getAttribute("data-title") || "";
+          miniArtist.textContent = item.getAttribute("data-artist") || "";
+          miniPlayer.classList.add("active");
+        }
+
+        function playSongAtIndex(index) {
+          if (index < 0 || index >= playlist.length) return;
+          audio.pause();
+          audio.currentTime = 0;
+          playlist.forEach((el) => el.classList.remove("active"));
+          const item = playlist[index];
+          item.classList.add("active");
+          const src = item.getAttribute("data-src");
+          if (src) {
+            audio.src = src;
+            audio.load();
+            currentSongIndex = index;
+            updateMiniPlayer(index);
+            audio.play();
+          }
+        }
+
+        playlist.forEach((item, idx) => {
+          item.addEventListener("click", function () {
+            playSongAtIndex(idx);
+          });
+        });
+
+        miniPlayPause.addEventListener("click", function () {
+          if (currentSongIndex === -1) return;
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        });
+
+        audio.addEventListener("play", function () {
+          isPlaying = true;
+          miniPlayPauseIcon.textContent = "⏸️";
+        });
+        audio.addEventListener("pause", function () {
+          isPlaying = false;
+          miniPlayPauseIcon.textContent = "▶️";
+        });
+        audio.addEventListener("ended", function () {
+          miniPlayPauseIcon.textContent = "▶️";
+        });
+      });
+    </script>
+  </body>
+</html>
