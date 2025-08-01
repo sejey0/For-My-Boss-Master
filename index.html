@@ -15,10 +15,73 @@
     <div class="intro-overlay" id="introOverlay">
       <div class="intro-content">
         <div class="intro-heart">
-          <div class="intro-heart-shape"></div>
+          <svg
+            class="heart-svg animated-heart"
+            width="110"
+            height="100"
+            viewBox="0 0 55 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="display: block; margin: 0 auto"
+          >
+            <defs>
+              <radialGradient
+                id="introHeartGradient"
+                cx="50%"
+                cy="40%"
+                r="70%"
+                fx="50%"
+                fy="30%"
+              >
+                <stop offset="0%" stop-color="#fff6f6" stop-opacity="0.9" />
+                <stop offset="60%" stop-color="#ffb3ba" stop-opacity="0.7" />
+                <stop offset="100%" stop-color="#e57373" stop-opacity="1" />
+              </radialGradient>
+              <filter
+                id="introHeartShadow"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+              >
+                <feDropShadow
+                  dx="0"
+                  dy="4"
+                  stdDeviation="3"
+                  flood-color="#e57373"
+                  flood-opacity="0.25"
+                />
+              </filter>
+              <linearGradient
+                id="introHeartHighlight"
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="1"
+              >
+                <stop offset="0%" stop-color="#fff" stop-opacity="0.7" />
+                <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M27.5 47s-1.7-1.5-4.2-3.6C13.5 35.5 2 26.5 2 16.5 2 8.5 8.5 2 16.5 2c3.9 0 7.6 1.9 11 5.1C30.9 3.9 34.6 2 38.5 2 46.5 2 53 8.5 53 16.5c0 10-11.5 19-21.3 26.9C29.2 45.5 27.5 47 27.5 47z"
+              fill="url(#introHeartGradient)"
+              stroke="#e57373"
+              stroke-width="2"
+              filter="url(#introHeartShadow)"
+            />
+            <ellipse
+              cx="19"
+              cy="13"
+              rx="7"
+              ry="3.2"
+              fill="url(#introHeartHighlight)"
+              opacity="0.7"
+            />
+          </svg>
         </div>
-        <h1 class="intro-title">Monthly Anniversary</h1>
-        <p class="intro-subtitle">A Special Love Letter</p>
+        <h1 class="intro-title">Happy Girlfriends Day My Love</h1>
+        <p class="intro-subtitle">A Special Letter For You</p>
         <div class="intro-envelope">
           <div class="envelope-flap"></div>
           <div class="envelope-body"></div>
@@ -52,10 +115,67 @@
       <div class="love-letter">
         <div class="letter-header">
           <div class="heart-decoration">
-            <div class="heart"></div>
+            <svg
+              class="heart-svg animated-heart"
+              width="110"
+              height="100"
+              viewBox="0 0 55 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="display: block; margin: 0 auto"
+            >
+              <defs>
+                <radialGradient
+                  id="heartGradient"
+                  cx="50%"
+                  cy="40%"
+                  r="70%"
+                  fx="50%"
+                  fy="30%"
+                >
+                  <stop offset="0%" stop-color="#fff6f6" stop-opacity="0.9" />
+                  <stop offset="60%" stop-color="#ffb3ba" stop-opacity="0.7" />
+                  <stop offset="100%" stop-color="#e57373" stop-opacity="1" />
+                </radialGradient>
+                <filter
+                  id="heartShadow"
+                  x="-10%"
+                  y="-10%"
+                  width="120%"
+                  height="120%"
+                >
+                  <feDropShadow
+                    dx="0"
+                    dy="4"
+                    stdDeviation="3"
+                    flood-color="#e57373"
+                    flood-opacity="0.25"
+                  />
+                </filter>
+                <linearGradient id="heartHighlight" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#fff" stop-opacity="0.7" />
+                  <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M27.5 47s-1.7-1.5-4.2-3.6C13.5 35.5 2 26.5 2 16.5 2 8.5 8.5 2 16.5 2c3.9 0 7.6 1.9 11 5.1C30.9 3.9 34.6 2 38.5 2 46.5 2 53 8.5 53 16.5c0 10-11.5 19-21.3 26.9C29.2 45.5 27.5 47 27.5 47z"
+                fill="url(#heartGradient)"
+                stroke="#e57373"
+                stroke-width="2"
+                filter="url(#heartShadow)"
+              />
+              <ellipse
+                cx="19"
+                cy="13"
+                rx="7"
+                ry="3.2"
+                fill="url(#heartHighlight)"
+                opacity="0.7"
+              />
+            </svg>
           </div>
-          <h1 class="title">Monthly Anniversary</h1>
-          <div class="subtitle">A Love Letter for You</div>
+          <h1 class="title">Happy Girlfriends Day lovelove</h1>
+          <div class="subtitle">A Letter for You</div>
         </div>
 
         <div class="letter-content">
@@ -64,38 +184,111 @@
           </div>
 
           <div class="greeting">
-            <span class="highlight">My Dearest Love,</span>
+            <span class="highlight">Dear LoveLove,</span>
           </div>
 
           <div class="message">
             <p class="paragraph fade-in">
-              Another beautiful month has passed with you by my side, and my
-              heart overflows with gratitude for every moment we've shared
-              together.
-            </p>
-
-            <p class="paragraph fade-in">
-              Like the gentle tulips that bloom in spring, our love continues to
-              grow and flourish with each passing day. You bring color to my
-              world, just as these beautiful flowers bring life to a garden.
-            </p>
-
-            <p class="paragraph fade-in">
-              You are my rose among thorns, my comfort in chaos, and my joy in
-              every season. Your love is the mint-fresh breeze that soothes my
-              soul and the warmth that lights up my darkest days.
-            </p>
-
-            <p class="paragraph fade-in">
-              Thank you for being my partner, my best friend, and my greatest
-              love. Here's to another month of adventures, laughter, and endless
-              love.
+              Hello lovelove. Happy Girlfriends Day po! Masaya po ako at sa araw
+              na 'to and'yan kana bilang partner, gf ko. Sabi ko nga hindi kita
+              hiniling pero binigay ka n'ya ka sa'kin. Salamat love sa
+              pagtanggap at pagmamahal super na-appreciate ko po lahat ng
+              pinapakita at pinaparamdam mo sa'kin. Hindi ko po akalain na
+              andito na tayo sa part na 'to ngayon marami ka po binago sa'kin na
+              nakabuti sa'kin bilang ako nabago at binago ko po ang ibang
+              pananaw at ugali ko dahil po sayo maraming salamat po sa lahat
+              dahil kong hindi po dahil sayo hindi ako ganto ka-kalmado no'ng
+              wala ka pa po super ako mag-overthink tapos ibang-iba talaga ugali
+              ko pero dahil po sayo nabago at naging better person po ako hindi
+              lang para sa sarili kundi para rin po sayo at sa relationship
+              natin ngayon, mahal na mahal po kita alam mo po 'yan pero gan'to
+              pala kapag minahal ka rin ng pabalik lahat ng tiwala ko kaya ko
+              ibigay sayo alam mo po 'yan pero may mga times rin po na syempre
+              magseselos ako at mag-overthink parin alam mo naman po kong gaano
+              ako katakot na mawala ka at super important mo po sa'kin. Kahit
+              ibang plans natin is hindi matupad dahil nagbabago ang mga
+              bagay-bagay pero isa lang ang hinding-hindi magbabago 'yon ay ang
+              pagmamahal ko sayo. Kahit ano pa mangyari at kahit anong maging
+              desisyon mo sa lahat kasama mo ako, ako ang pinaka kakampi at
+              kasama mo sa lahat no. 1 ako d'yan. Basta tutuparin natin lahat ng
+              magkasama kahit saan tayo makarating o kahit anong challenges ang
+              pagdaanan natin wag na wag tayo maghihiwalay tayo, kahinaan at
+              kalakasan kita boss hindi talaga mag-function kapag nawala ka
+              sa'kin boss. Basta sa december kapag hindi kaya, kahit 1 day lang
+              po kasama ka tapos sa church tayo ha masaya na po ako nun and
+              gagawin po natin na super special ng araw na 'yon me po bahala
+              i'll make sure po 'yan. Mas gagalingan ko pa po sa lahat para sa
+              future natin hindi man ako 'yong best na lalaki na kaya ang lahat
+              basta po ang maipagmamalaki ko lang is totoo at tunay po ang love
+              ko for you and mabuti po ang intensyon ko sayo at gagawin lahat ng
+              makakaya ko para mapasaya ka at magtagal ang relationship natin.
+              Wala na akong hihilingin pa kasi lahat ng mga wish, plans and
+              goals ko sa buhay ay kasama kana gagawan natin ng actions para
+              mangyari lahat ng 'yon. Love, salamat kasi pinili mong manatili.
+              Sa kabila ng flaws ko, insecurities, at overthinking —
+              pinaparamdam mo sa’kin na sapat ako, na deserving ako ng
+              pagmamahal. Hindi ko man laging maipakita perfectly kung gaano
+              kita kamahal, pero araw-araw sinisigurado kong maramdaman mo ‘yon
+              sa mga actions ko, sa mga pangarap ko na kasama ka, at sa lahat ng
+              dasal ko na palagi kang kasama. Alam kong hindi perpekto ang
+              lahat, may mga panahon talaga na mahirap, na may tampuhan o
+              lungkot — pero love, promise ko, kahit anong pagdaanan natin,
+              hindi kita bibitawan. Lalaban ako para sa’tin. Kasi ikaw na talaga
+              ang tahanan ko. Sa’yo ko lang naramdaman ‘yung peace. Sa mga
+              darating pa na araw, buwan, taon — ikaw pa rin. Gusto kong sabay
+              nating abutin lahat ng pangarap natin. Alam mo love, minsan
+              naiisip ko na ang swerte ko talaga kasi ikaw ‘yung naging partner
+              ko. Hindi ko man alam kung anong ginawa kong tama para ibigay ka
+              sa'kin ni Lord, pero sobrang thankful ako kasi ikaw ‘yung napunta
+              sa buhay ko sa panahong hindi ko inaasahan pero sobrang kailangan
+              ko pala. Isa kang answered prayer na hindi ko hiningi, pero
+              ipinagkaloob sa’kin ng buong buo. Minsan naiisip ko rin kung paano
+              kaya ang buhay ko kung hindi kita nakilala — siguro hindi ako
+              ganito katahimik, ganito ka-inspire magpursige, at ganito kasaya.
+              Ang dami mong binago sa mundo ko, at hindi ko na alam kung paano
+              ko ipapaliwanag pa lahat ng ‘yon. Basta ang alam ko lang, hindi na
+              ako kumpleto kapag wala ka. Parang ikaw na ‘yung missing piece sa
+              buhay kong dati akala ko okay na, pero mas naging buo nung
+              dumating ka. Alam kong may mga araw na hindi ako okay, at minsan
+              hindi ko rin kayang maging best version ng sarili ko. Pero love,
+              gusto kong malaman mo na araw-araw kong pinipiling mahalin ka.
+              Kahit sa mga panahong pagod ako, tahimik ako, o parang malayo ako
+              — hindi ‘yon dahil sa’yo. Dahil kung meron man akong tahanan at
+              sandalan, ikaw ‘yon. Sa puso mo ako uuwi palagi. Love, wala akong
+              ibang hinihiling kundi ‘yung future na magkasama tayong dalawa.
+              Kahit saan man tayo dalhin ng buhay, gusto ko ikaw pa rin ‘yung
+              katabi ko — sa hirap, sa saya, sa tagumpay, sa pagod, at sa mga
+              simpleng araw na kahit hindi tayo magkasama. At balang araw, kapag
+              natupad na lahat ng pangarap natin, babalikan natin ‘tong mga
+              panahong ‘to na puro pangarap pa lang — at sasabihin nating,
+              “Kinaya natin, kasi magkasama tayo.”. At love, hindi ko man
+              maibigay agad lahat ng magagarbong bagay, pero isa lang ang
+              maipapangako ko — buong puso ko, buong pagkatao ko, buong
+              pagmamahal ko, ibibigay ko sa’yo. Araw-araw. Hanggang sa tumanda
+              tayo. Kapag pagod ka na, pahinga ka sa’kin. Kapag naguguluhan ka
+              na, ako ang magiging sandalan mo sa lahat. Na-realize ko rin love
+              na habang tumatagal, mas lalo kitang minamahal — hindi dahil sa
+              kung ano lang ang pinapakita mo, kundi dahil sa kung sino ka
+              talaga. Kahit ano ipakita mo sa'kin, lalona 'yong ano, ay
+              hehehehe, lalo akong nahuhulog sa'yo. Yung totoo, hindi lang kita
+              mahal... pinaramdam mo sa’kin kung ano talaga ang ibig sabihin ng
+              pagmamahal — ‘yung may respeto, tiwala, lambing, at
+              higit sa lahat, pagpili. Kasi araw-araw, pinipili mo ako. At
+              araw-araw, pinipili rin kita. At pipiliin pa rin kita bukas, at sa
+              bawat bukas na darating. Sa huli, ito lang ang gusto kong malaman
+              mo,<br /><br />
+              Ikaw ang mahal ko.<br />
+              Ikaw ang pipiliin ko.<br />
+              Ikaw ang kasabay ko sa lahat ng laban.<br />
+              Ikaw ang panalangin ko, pangarap ko, at buong puso kong mahal.<br />
+              Hanggang dulo, ikaw lang. Palagi.<br /><br />
+              I love you so much lovelove ko. muuuuuuaaaaaahhhhhh.
             </p>
           </div>
 
           <div class="signature fade-in">
             <div class="love-text">With all my love,</div>
-            <div class="name">Your Forever Valentine ❤️</div>
+            <div class="name">CJay❤️</div>
           </div>
         </div>
 
