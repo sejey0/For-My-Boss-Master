@@ -11,6 +11,18 @@
     />
   </head>
   <body>
+    <!-- Love Quote Carousel in Header -->
+    <div class="love-quote-carousel" id="loveQuoteCarousel">
+      <div class="love-quote-text" id="loveQuoteText">
+        “You are my today and all of my tomorrows.”
+      </div>
+      <div class="sparkle s1"></div>
+      <div class="sparkle s2"></div>
+      <div class="sparkle s3"></div>
+      <div class="sparkle s4"></div>
+      <div class="sparkle s5"></div>
+    </div>
+
     <!-- Intro Overlay -->
     <div class="intro-overlay" id="introOverlay">
       <div class="intro-content">
@@ -80,17 +92,156 @@
             />
           </svg>
         </div>
-        <h1 class="intro-title">Happy Girlfriends Day My Love</h1>
-        <p class="intro-subtitle">A Special Letter For You</p>
+        <div class="intro-animated-title-group">
+          <h1 class="intro-title animated-gradient-title">
+            Happy Girlfriends Day My Love
+            <span class="floating-heart fh1"></span>
+            <span class="floating-heart fh2"></span>
+            <span class="floating-heart fh3"></span>
+            <span class="floating-heart fh4"></span>
+            <span class="floating-heart fh5"></span>
+            <span class="floating-heart fh6"></span>
+            <!-- More floating hearts for extra magic -->
+            <span class="floating-heart fh7"></span>
+            <span class="floating-heart fh8"></span>
+            <span class="floating-heart fh9"></span>
+          </h1>
+          <p class="intro-subtitle animated-gradient-subtitle">
+            A Special Letter For You
+            <span class="subtitle-sparkle sparkle-1"></span>
+            <span class="subtitle-sparkle sparkle-2"></span>
+          </p>
+        </div>
         <div class="intro-envelope">
           <div class="envelope-flap"></div>
           <div class="envelope-body"></div>
           <div class="envelope-letter"></div>
         </div>
-        <button class="open-letter-btn" id="openLetterBtn">
-          <span>Open My Heart</span>
-          <div class="btn-sparkle"></div>
-        </button>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 18px;
+          "
+        >
+          <button
+            class="open-letter-btn animated-btn-glow pop-up-center"
+            id="openLetterBtnTrigger"
+            style="z-index: 2"
+          >
+            <span class="btn-heart-bg">
+              <svg
+                class="btn-heart-svg"
+                width="38"
+                height="34"
+                viewBox="0 0 38 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 34s-2.2-2-5.4-4.7C4.5 25.5 0 20.5 0 13.5 0 6.5 6.5 0 13.5 0c3.2 0 6.2 1.6 9 4.2C25.3 1.6 28.3 0 31.5 0 38.5 0 45 6.5 45 13.5c0 7-4.5 12-13.6 15.8C21.2 32 19 34 19 34z"
+                  fill="#ffb3ba"
+                  stroke="#e57373"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </span>
+            <span class="btn-heart-text">Open My Heart</span>
+            <div class="btn-sparkle sparkle-1"></div>
+            <div class="btn-sparkle sparkle-2"></div>
+          </button>
+        </div>
+        <!-- Magic Word Modal -->
+        <div id="magicWordModal" class="magic-word-modal" style="display: none">
+          <div class="magic-word-modal-content animated-modal-form">
+            <span class="magic-word-modal-close" id="magicWordModalClose"
+              >&times;</span
+            >
+            <!-- Animated floating hearts -->
+            <div class="modal-floating-heart fh1"></div>
+            <div class="modal-floating-heart fh2"></div>
+            <div class="modal-floating-heart fh3"></div>
+            <div class="modal-floating-heart fh4"></div>
+            <!-- Animated sparkles -->
+            <div class="modal-sparkle ms1"></div>
+            <div class="modal-sparkle ms2"></div>
+            <div class="modal-sparkle ms3"></div>
+            <form
+              class="modal-form-fields"
+              autocomplete="off"
+              onsubmit="return false;"
+            >
+              <label
+                for="openLetterInput"
+                class="magic-word-label animated-label"
+                >Enter our callsign to open:</label
+              >
+              <input
+                id="openLetterInput"
+                type="text"
+                maxlength="16"
+                class="animated-input"
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <label
+                for="annivDateInput"
+                class="magic-word-label animated-label"
+                style="margin-top: 18px"
+                >When is our month monthsarry/anniversary?</label
+              >
+              <input id="annivDateInput" type="date" class="animated-input" />
+              <div
+                id="openLetterError"
+                class="animated-error"
+                style="display: none"
+              ></div>
+              <button
+                class="open-letter-btn animated-btn-glow pop-up-center animated-modal-btn"
+                id="openLetterBtn"
+                type="button"
+                style="margin-top: 14px"
+              >
+                <span class="btn-heart-bg">
+                  <svg
+                    class="btn-heart-svg"
+                    width="28"
+                    height="24"
+                    viewBox="0 0 38 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 34s-2.2-2-5.4-4.7C4.5 25.5 0 20.5 0 13.5 0 6.5 6.5 0 13.5 0c3.2 0 6.2 1.6 9 4.2C25.3 1.6 28.3 0 31.5 0 38.5 0 45 6.5 45 13.5c0 7-4.5 12-13.6 15.8C21.2 32 19 34 19 34z"
+                      fill="#ffb3ba"
+                      stroke="#e57373"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+                <span class="btn-heart-text">Open</span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Extra floating petals and twinkling stars for magical effect -->
+        <div class="intro-extra-decor">
+          <!-- Floating Petals -->
+          <div class="intro-petal p1"></div>
+          <div class="intro-petal p2"></div>
+          <div class="intro-petal p3"></div>
+          <div class="intro-petal p4"></div>
+          <div class="intro-petal p5"></div>
+          <div class="intro-petal p6"></div>
+          <!-- Twinkling Stars -->
+          <div class="intro-star s1"></div>
+          <div class="intro-star s2"></div>
+          <div class="intro-star s3"></div>
+          <div class="intro-star s4"></div>
+          <div class="intro-star s5"></div>
+        </div>
       </div>
       <div class="intro-flowers">
         <div class="intro-tulip intro-tulip-1"></div>
@@ -187,8 +338,55 @@
             <span class="highlight">Dear LoveLove,</span>
           </div>
 
-          <div class="message">
-            <p class="paragraph fade-in">
+          <div class="message" style="text-align: center">
+            <!-- Animated border with flowers and hearts + extra designs -->
+            <div class="animated-message-border">
+              <div class="border-corner border-corner-tl">
+                <span class="border-flower tulip"></span>
+                <span class="border-heart"></span>
+              </div>
+              <div class="border-corner border-corner-tr">
+                <span class="border-flower rose"></span>
+                <span class="border-heart"></span>
+              </div>
+              <div class="border-corner border-corner-bl">
+                <span class="border-flower rose"></span>
+                <span class="border-heart"></span>
+              </div>
+              <div class="border-corner border-corner-br">
+                <span class="border-flower tulip"></span>
+                <span class="border-heart"></span>
+              </div>
+              <div class="border-side border-side-top"></div>
+              <div class="border-side border-side-bottom"></div>
+              <div class="border-side border-side-left"></div>
+              <div class="border-side border-side-right"></div>
+              <!-- Butterflies -->
+              <div class="butterfly b1"></div>
+              <div class="butterfly b2"></div>
+              <div class="butterfly b3"></div>
+              <div class="butterfly b4"></div>
+              <!-- Twinkling Stars -->
+              <div class="twinkle-star s1"></div>
+              <div class="twinkle-star s2"></div>
+              <div class="twinkle-star s3"></div>
+              <div class="twinkle-star s4"></div>
+              <div class="twinkle-star s5"></div>
+            </div>
+            <!-- Animated background hearts -->
+            <div class="animated-hearts-bg">
+              <div class="heart-bg heart-bg-1"></div>
+              <div class="heart-bg heart-bg-2"></div>
+              <div class="heart-bg heart-bg-3"></div>
+            </div>
+            <!-- Animated floating flowers -->
+            <div class="animated-flowers-bg">
+              <div class="flower-bg flower-bg-tulip flower-bg-1"></div>
+              <div class="flower-bg flower-bg-rose flower-bg-2"></div>
+              <div class="flower-bg flower-bg-tulip flower-bg-3"></div>
+            </div>
+            <p class="paragraph fade-in animated-message-text">
+              <!-- ...existing message text... -->
               Hello lovelove. Happy Girlfriends Day po! Masaya po ako at sa araw
               na 'to and'yan kana bilang partner, gf ko. Sabi ko nga hindi kita
               hiniling pero binigay ka n'ya ka sa'kin. Salamat love sa
@@ -272,11 +470,10 @@
               talaga. Kahit ano ipakita mo sa'kin, lalona 'yong ano, ay
               hehehehe, lalo akong nahuhulog sa'yo. Yung totoo, hindi lang kita
               mahal... pinaramdam mo sa’kin kung ano talaga ang ibig sabihin ng
-              pagmamahal — ‘yung may respeto, tiwala, lambing, at
-              higit sa lahat, pagpili. Kasi araw-araw, pinipili mo ako. At
-              araw-araw, pinipili rin kita. At pipiliin pa rin kita bukas, at sa
-              bawat bukas na darating. Sa huli, ito lang ang gusto kong malaman
-              mo,<br /><br />
+              pagmamahal — ‘yung may respeto, tiwala, lambing, at higit sa
+              lahat, pagpili. Kasi araw-araw, pinipili mo ako. At araw-araw,
+              pinipili rin kita. At pipiliin pa rin kita bukas, at sa bawat
+              bukas na darating. Sa huli, ito lang ang gusto kong malaman mo,<br /><br />
               Ikaw ang mahal ko.<br />
               Ikaw ang pipiliin ko.<br />
               Ikaw ang kasabay ko sa lahat ng laban.<br />
@@ -313,9 +510,30 @@
         <div class="interactive-heart" data-message="Forever yours!"></div>
       </div>
 
-      <!-- Modern Music Player Section -->
-      <div class="music-player-modern" id="musicPlayer">
+      <!-- Modern Music Player Section (fixed at top) -->
+      <div
+        class="music-player-modern"
+        id="musicPlayer"
+        style="
+          margin-top: 0;
+          margin-bottom: 210%;
+          position: relative;
+          overflow: visible;
+          background: linear-gradient(90deg, #fff0f6 0%, #fceabb 100%);
+          box-shadow: 0 4px 24px 0 rgba(255, 182, 193, 0.15);
+          border-radius: 18px;
+          border: 2px solid #ffb3ba;
+          animation: musicGlow 3s infinite alternate;
+        "
+      >
         <div class="playlist-modern">
+          <div class="music-select-message">🎵 Select a song to play 🎵</div>
+          <!-- Animated music notes -->
+          <div class="animated-music-notes">
+            <div class="music-note note-1">&#119070;</div>
+            <div class="music-note note-2">&#119071;</div>
+            <div class="music-note note-3">&#119070;</div>
+          </div>
           <div class="album-title">All These and More (2024)</div>
           <div
             class="song-item"
@@ -344,7 +562,6 @@
             <div class="song-title">Strangest Love</div>
             <div class="song-artist">The Ridleys</div>
           </div>
-
           <div class="album-title">
             Reflections on Moonlight & Poetry (2019)
           </div>
@@ -465,7 +682,6 @@
             <div class="song-title">Intro/Outro</div>
             <div class="song-artist">The Ridleys</div>
           </div>
-
           <div class="album-title">Aphrodite EP (2016)</div>
           <div
             class="song-item"
@@ -476,7 +692,6 @@
             <div class="song-title">Yvaine</div>
             <div class="song-artist">The Ridleys</div>
           </div>
-
           <div class="album-title">Until I Reach the Sun, Vol. 1 (2022)</div>
           <div
             class="song-item"
@@ -541,7 +756,6 @@
             <div class="song-title">Return</div>
             <div class="song-artist">The Ridleys</div>
           </div>
-
           <div class="album-title">Until I Reach the Sun, Vol. 2 (2023)</div>
           <div
             class="song-item"
@@ -644,24 +858,279 @@
       />
     </audio>
 
+    <style>
+      /* Magic Word Modal Styles */
+      .magic-word-modal {
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 182, 193, 0.18);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeInModalBg 0.3s;
+      }
+      @keyframes fadeInModalBg {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .magic-word-modal-content {
+        background: #fff0f6;
+        border-radius: 18px;
+        box-shadow: 0 8px 40px 0 #ffb3ba55, 0 2px 12px #e5737340;
+        padding: 36px 32px 28px 32px;
+        min-width: 320px;
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        animation: popUpModal 0.5s cubic-bezier(0.23, 1.2, 0.32, 1);
+      }
+      @keyframes popUpModal {
+        0% {
+          opacity: 0;
+          transform: scale(0.7) translateY(40px);
+        }
+        60% {
+          opacity: 1;
+          transform: scale(1.08) translateY(-8px);
+        }
+        80% {
+          transform: scale(0.97) translateY(2px);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+      .magic-word-modal-close {
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        font-size: 2em;
+        color: #e57373;
+        cursor: pointer;
+        transition: color 0.2s;
+        z-index: 2;
+      }
+      .magic-word-modal-close:hover {
+        color: #b71c1c;
+      }
+      .magic-word-label {
+        font-size: 1.1em;
+        color: #e57373;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      /* Pop up animation for the label */
+      .pop-up-label {
+        animation: popUpLabel 0.7s cubic-bezier(0.23, 1.2, 0.32, 1) 0s both;
+        will-change: transform, opacity;
+      }
+      @keyframes popUpLabel {
+        0% {
+          opacity: 0;
+          transform: scale(0.7) translateY(30px);
+        }
+        60% {
+          opacity: 1;
+          transform: scale(1.08) translateY(-6px);
+        }
+        80% {
+          transform: scale(0.97) translateY(2px);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+      /* Pop up and center animation for Open My Heart button */
+      .pop-up-center {
+        animation: popUpHeartBtn 0.7s cubic-bezier(0.23, 1.2, 0.32, 1) 0.2s both;
+        box-shadow: 0 6px 32px 0 rgba(255, 182, 193, 0.25),
+          0 1.5px 8px #ffb3ba44;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translateY(0);
+      }
+      @keyframes popUpHeartBtn {
+        0% {
+          opacity: 0;
+          transform: scale(0.5) translateY(40px);
+        }
+        60% {
+          opacity: 1;
+          transform: scale(1.08) translateY(-8px);
+        }
+        80% {
+          transform: scale(0.97) translateY(2px);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+      /* Center the button/input group in the overlay */
+      .intro-content
+        > div[style*="flex-direction: column"]
+        > div[style*="align-items: center"] {
+        justify-content: center;
+        width: 100%;
+      }
+    </style>
     <script src="script.js"></script>
     <script>
       // Prevent letter from auto-opening: show intro overlay until button is clicked
+
       document.addEventListener("DOMContentLoaded", function () {
         const introOverlay = document.getElementById("introOverlay");
         const mainContent = document.getElementById("mainContent");
+        const openLetterBtnTrigger = document.getElementById(
+          "openLetterBtnTrigger"
+        );
+        const magicWordModal = document.getElementById("magicWordModal");
+        const magicWordModalClose = document.getElementById(
+          "magicWordModalClose"
+        );
         const openLetterBtn = document.getElementById("openLetterBtn");
+        const openLetterInput = document.getElementById("openLetterInput");
+        const openLetterError = document.getElementById("openLetterError");
 
         // Hide main content initially, show overlay
         mainContent.classList.remove("revealed");
         introOverlay.classList.remove("hide");
 
-        openLetterBtn.addEventListener("click", function () {
-          introOverlay.classList.add("hide");
+        // Show modal when trigger button is clicked
+        openLetterBtnTrigger.addEventListener("click", function () {
+          magicWordModal.style.display = "flex";
           setTimeout(() => {
-            mainContent.classList.add("revealed");
-          }, 400);
+            openLetterInput.focus();
+          }, 200);
         });
+
+        // Close modal on X click
+        magicWordModalClose.addEventListener("click", function () {
+          magicWordModal.style.display = "none";
+          openLetterInput.value = "";
+          openLetterError.style.display = "none";
+        });
+
+        // Also close modal if user clicks outside the modal content
+        magicWordModal.addEventListener("click", function (e) {
+          if (e.target === magicWordModal) {
+            magicWordModal.style.display = "none";
+            openLetterInput.value = "";
+            openLetterError.style.display = "none";
+          }
+        });
+
+        function updateOpenLetterBtnState() {
+          const trimmed = openLetterInput.value.trim();
+          const dateVal = document.getElementById("annivDateInput").value;
+          const isCallsignValid =
+            trimmed === "lovelove" || trimmed === "LoveLove";
+          const isDateValid = dateVal === "2025-07-15";
+          openLetterBtn.disabled = !(isCallsignValid && isDateValid);
+        }
+
+        function tryOpenLetter(e) {
+          // Prevent form submission from reloading the page
+          if (e && e.preventDefault) e.preventDefault();
+          const val = openLetterInput.value;
+          const trimmed = val.trim();
+          const dateVal = document.getElementById("annivDateInput").value;
+          // Always keep the button enabled
+          openLetterBtn.disabled = false;
+          if (
+            (trimmed === "lovelove" || trimmed === "LoveLove") &&
+            dateVal === "2025-07-15"
+          ) {
+            openLetterError.style.display = "none";
+            magicWordModal.style.display = "none";
+            introOverlay.classList.add("hide");
+            setTimeout(() => {
+              mainContent.classList.add("revealed");
+            }, 400);
+          } else {
+            let alertMsg = "";
+            if (trimmed === "" || dateVal === "") {
+              openLetterError.textContent =
+                "Please enter both the callsign and the correct date.";
+              alertMsg =
+                "Please fill in both the callsign and the anniversary date.";
+            } else if (trimmed !== "lovelove" && trimmed !== "LoveLove") {
+              openLetterError.textContent = "Incorrect callsign. Try again!";
+              alertMsg = "The callsign you entered is incorrect.";
+            } else if (dateVal !== "2025-07-15") {
+              openLetterError.textContent =
+                "Only July 15, 2025 is accepted as our anniversary date.";
+              alertMsg =
+                "The anniversary date is incorrect. Only July 15, 2025 is accepted.";
+            } else {
+              openLetterError.textContent = "Incorrect input. Try again!";
+              alertMsg = "Incorrect input. Please try again.";
+            }
+            // Show pop-up warning for all error cases immediately
+            if (alertMsg) {
+              alert(alertMsg);
+            }
+            openLetterError.style.display = "block";
+            // Focus the incorrect field for user convenience
+            if (trimmed === "" && dateVal === "") {
+              openLetterInput.focus();
+            } else if (trimmed !== "lovelove" && trimmed !== "LoveLove") {
+              openLetterInput.focus();
+            } else if (dateVal !== "2025-07-15") {
+              document.getElementById("annivDateInput").focus();
+            }
+          }
+        }
+
+        openLetterBtn.addEventListener("click", tryOpenLetter);
+        openLetterInput.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            tryOpenLetter(e);
+          }
+        });
+        openLetterInput.addEventListener("input", updateOpenLetterBtnState);
+        document
+          .getElementById("annivDateInput")
+          .addEventListener("input", updateOpenLetterBtnState);
+        // Initialize button state on load
+        updateOpenLetterBtnState();
+
+        // Love Quote Carousel (header)
+        const loveQuotes = [
+          "“You are my today and all of my tomorrows.”",
+          "“I love you not only for what you are, but for what I am when I am with you.”",
+          "“Every love story is beautiful, but ours is my favorite.”",
+          "“You are the poem I never knew how to write, and this life is the story I always wanted to tell.”",
+          "“In your smile I see something more beautiful than the stars.”",
+          "“I still fall for you every day.”",
+          "“With you, forever isn’t long enough.”",
+          "“You are my heart, my life, my one and only thought.”",
+          "“I look at you and see the rest of my life in front of my eyes.”",
+          "“I love you to the moon and back, to infinity and beyond, forever and ever.”",
+        ];
+        let quoteIndex = 0;
+        const loveQuoteText = document.getElementById("loveQuoteText");
+        setInterval(() => {
+          quoteIndex = (quoteIndex + 1) % loveQuotes.length;
+          loveQuoteText.style.opacity = 0;
+          setTimeout(() => {
+            loveQuoteText.textContent = loveQuotes[quoteIndex];
+            loveQuoteText.style.opacity = 1;
+          }, 400);
+        }, 6000);
 
         // Modern music player logic
         const playlist = Array.from(
