@@ -124,42 +124,8 @@ function initializeLoveLetter() {
 // Set current date in a romantic format
 function setCurrentDate() {
   const dateElement = document.getElementById("current-date");
-  const now = new Date();
-
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-
-  const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
-  const dayName = days[now.getDay()];
-  const month = months[now.getMonth()];
-  const day = now.getDate();
-  const year = now.getFullYear();
-
-  // Add ordinal suffix to day
-  const ordinalSuffix = getOrdinalSuffix(day);
-
-  dateElement.textContent = `${dayName}, ${month} ${day}${ordinalSuffix}, ${year}`;
+  // Always show August 1, 2025
+  dateElement.textContent = "August 1, 2025";
 }
 
 function getOrdinalSuffix(day) {
